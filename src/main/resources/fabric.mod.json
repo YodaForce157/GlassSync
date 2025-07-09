@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "glasssync",
+  "version": "${version}",
+  "name": "GlassSync",
+  "description": "",
+  "authors": ["YodaForce157"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/glasssync/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.yodaforce.glasssync.client.GlassSyncClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "glasssync.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
