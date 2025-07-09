@@ -1,8 +1,11 @@
-name: release.yml
+name: Release
 on:
   push:
     tags:
       - 'v*.*.*'
+
+permissions:
+  contents: write
 
 jobs:
   build-and-release:
